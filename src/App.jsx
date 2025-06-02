@@ -7,10 +7,12 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Profile from "./pages/Profile";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <>
+      <NavBar />
       <Routes>
         <Route path="/" Component={Home} />
         <Route path="/contact" Component={Contact} />
